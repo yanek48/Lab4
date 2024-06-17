@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя особиста сторінка</title>
+    <link id="stylesheet" rel="stylesheet" href="light-style.css">
+    <style>
+        /* Загальні стилі */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background 0.5s, color 0.5s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .block {
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .block img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .style-switcher {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .style-switcher button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .style-switcher button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body class="light">
+
+    <div class="container">
+        <!-- Перемикач стилю -->
+        <div class="style-switcher">
+            <button onclick="switchStyle('light')">Світлий стиль</button>
+            <button onclick="switchStyle('dark')">Темний стиль</button>
+        </div>
+
+        <header class="block">
+            <h1>Моя особиста сторінка</h1>
+            <p><strong>Ім'я:</strong> Кисильов Ян</p>
+            <p><strong>Адреса електронної пошти:</strong> <a href="mailto:kisilevyanek@gmail.com">kisilevyanek@gmail.com</a></p>
+        </header>
+
+        <section class="block">
+            <h2>Таблиця з предметами</h2>
+            <table>
+                <tr>
+                    <th>Предмет</th>
+                    <th>Викладач</th>
+                    <th>Оцінка</th>
+                </tr>
+                <tr>
+                    <td>Теорія ймовірностей</td>
+                    <td>Вязовиченко Ю.А.</td>
+                    <td>А</td>
+                </tr>
+                <tr>
+                    <td>Обчислювальні методи</td>
+                    <td>Плаксій Ю.А.</td>
+                    <td>А</td>
+                </tr>
+                <tr>
+                    <td>Фізичне виховання</td>
+                    <td>Хірний С.В.</td>
+                    <td>А</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="block">
+            <h2>Мої улюблені фільми</h2>
+            <ul>
+                <li><a href="https://www.imdb.com/title/tt0111161/">Втеча з Шоушенка</a></li>
+                <li><a href="https://www.imdb.com/title/tt0068646/">Хрещений батько</a></li>
+                <li><a href="https://www.imdb.com/title/tt0109830/">Форрест Ґамп</a></li>
+                <li><a href="https://www.imdb.com/title/tt0137523/">Бійцівський клуб</a></li>
+                <li><a href="https://www.imdb.com/title/tt0167260/">Володар перснів</a></li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2>3 слова, якими мене можна описати</h2>
+            <ul>
+                <li>Наполегливий</li>
+                <li>Креативний</li>
+                <li>Відповідальний</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2>Картинки, що показують мене у різних настроях</h2>
+            <img src="MyCollages.jpg" alt="мій настрій">
+        </section>
+
+        <section class="block">
+            <h2>Улюблена цитата</h2>
+            <blockquote>
+                "Єдиний спосіб зробити велику роботу - це любити те, що ви робите." - Стів Джобс
+            </blockquote>
+        </section>
+
+        <section class="block">
+            <h2>Місто, де я народився</h2>
+            <p>Я народився у місті Харків, яке є важливим культурним та освітнім центром України.</p>
+            <p>Місто-герой України (з 2022 року)</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.262807662199!2d36.2293903!3d49.9934992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a70d7e7f773f%3A0xadbab8ea63521517!2sKharkiv%2C%20Kharkiv%20Oblast%2C%20Ukraine%2C%2061000!5e0!3m2!1sen!2sua!4v1625814472460!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="block">
+            <h2>Моє рідне місто</h2>
+            <div id="slideshow">
+                <img src="slide1.jpg" class="slide">
+                <img src="slide2.jpg" class="slide">
+                <img src="slide3.jpg" class="slide">
+                <img src="slide4.jpg" class="slide">
+                <img src="slide5.jpg" class="slide">
+            </div>
+        </section>
+
+        <section class="block">
+            <h2>Мій улюблений проект</h2>
+            <p>Цей проект пов'язаний з вивченням 3D-моделювання.</p>
+            <a href="https://sketchfab.com/3d-models/drogon-game-of-thrones-2019-1b0ed357d4274c70a3adf9922c464816">Переглянути 3D-модель</a>
+        </section>
+    </div>
+
+    <script>
+        function switchStyle(styleName) {
+            const stylesheet = document.getElementById('stylesheet');
+            if (styleName === 'light') {
+                stylesheet.href = 'light-style.css';
+                document.body.className = 'light';
+            } else {
+                stylesheet.href = 'dark-style.css';
+                document.body.className = 'dark';
+            }
+        }
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+
+</body>
+</html>

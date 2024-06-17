@@ -1,0 +1,35 @@
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1, h2 {
+    color: #bb86fc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #444;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+.style-switcher button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.style-switcher button:hover {
+    background-color: #444;
+}
